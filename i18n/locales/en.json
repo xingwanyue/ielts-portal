@@ -1,0 +1,307 @@
+{
+  "Home": "HOME",
+  "IELTS": "IELTS",
+  "Case": "Case",
+  "Q&A": "Q&A",
+  "index": {
+    "party1": {
+      "h1": "#1 IELTS Practice Website",
+      "h2": "The World's Best Way to Learn IELTS",
+      "p": "Effortlessly secure high IELTS scores with our scientifically designed, AI-powered practice platform. Study just a bit each day, and you'll easily conquer the exam!",
+      "SignUPWithGoogle": "Sign Up With Google",
+      "StartForFree": "Start For Free"
+    },
+    "party2": {
+      "h2": "The Fastest Way to Score High on IELTS",
+      "h3_1": "Adaptive IELTS Practice",
+      "p_1": "Experience a dynamic learning path that automatically adjusts to your skill level, ensuring each practice session is both challenging and achievable.",
+      "h3_2": "Comprehensive IELTS Resources",
+      "p_2": "Tap into an extensive library of IELTS practice materials—from core vocabulary to focused speaking drills—making every study session count.",
+      "h3_3": "AI-Powered IELTS Feedback",
+      "p_3": "Accelerate your IELTS practice with real-time AI insights that pinpoint areas for improvement, guide your progress, and elevate your performance.",
+      "h3_4": "Time-Saving & Effective Sessions",
+      "p_4": "Maximize efficiency by practicing in shorter, impactful bursts, ensuring your IELTS practice fits seamlessly into your schedule and quickly boosts your scores.",
+      "btn": "Try it now",
+      "btn_img_alt": "White Arrow Right"
+    },
+    "party3": {
+      "title": "Trusted by 4,000,000+ users worldwide."
+    },
+    "party4": {
+      "h2": "Frequently Asked Questions",
+      "question1": "1. What is IELTSpractice.ai?",
+      "answer1": "IELTSpractice.ai is an all-in-one IELTS learning platform that has undergone three years of intensive development and real-world testing. It offers powerful AI-driven tools to help you easily secure a high IELTS score.",
+      "question2": "2. How can I use IELTSpractice.ai?",
+      "answer2": "You can jump right into practice without registering; however, your progress won’t be saved, and we won’t be able to recommend the most effective study materials for you. For the best experience and personalized feedback, we highly recommend creating an account.",
+      "question3": "3. Is IELTSpractice.ai free?",
+      "answer3": "Yes, our basic study features are completely free to use! Some of our advanced AI tools do require a paid membership, but you can get started with essential exercises at no cost.",
+      "question4": "4. How does IELTSpractice.ai work?",
+      "answer4": "Our platform is built by seasoned IELTS experts who have spent over a decade crafting effective study methods. We closely follow official IELTS guidelines and draw on real exam materials to design practice content that suits learners of all levels."
+    },
+    "party5": {
+      "h2": " Ready to boost your IELTS scores? Sign up at ieltspractice.ai today !",
+      "SignUPWithGoogle": "Sign Up With Google",
+      "StartForFree": "Start For Free"
+    }
+  },
+  "header": {
+    "logIn": "Log in",
+    "signUp": "Sign up"
+  },
+  "footer": {
+    "RefundPolicy": "Refund Policy",
+    "TermsOfService": "Terms of Service",
+    "PrivacyPolicy": "Privacy Policy"
+  },
+  "login": {
+    "peyea": "Please enter your email address",
+    "ie": "Invalid email",
+    "peyp": "Please enter your password",
+    "peyc": "Please enter your code",
+    "pts": "Password too short",
+    "peyfn": "Please enter your full name",
+    "pi": "Password inconsistency",
+    "WelcomeBack": "Welcome back",
+    "LoginToPractice": "Login to practice",
+    "LoginWithGoogle": "Login with Google",
+    "OrContinueWith": "Or continue with",
+    "SignUp": "Sign up",
+    "cyfda": "Create your free DETPractice account",
+    "SignUPWithGoogle": "Sign Up with Google",
+    "EmailAddress": " Email address",
+    "Password": "Password",
+    "Login": "Login",
+    "ForgotPassword": "Forgot password?",
+    "DontHaveAnAccount": "Don't have an account?",
+    "SignUpHere": "Sign up here",
+    "peteutcya": "Please enter the email used to create your account",
+    "ywryacbe": "You will receive your activation code by email",
+    "RegisterCode": "Register code",
+    "FullName": "Full name",
+    "ahaa": "Already have an account?",
+    "LoginHere": "Login here",
+    "wsyaewtrc": "We'll send you an email with the reset code",
+    "pwf1strc": "Please wait for 120 seconds to reset code",
+    "NewPassword": "New password",
+    "ConfirmNewPassword": "Confirm new Password",
+    "BackTOLogin": "< Back to login"
+  },
+  "refundPolicy": {
+    "h1": "Refund Policy",
+    "updated": "Last updated: 2025-05-23",
+    "p0": "Thank you for choosing and purchasing our services. We strive to provide the best learning experience for our customers. However, if you are not entirely satisfied with your purchase, we're here to help.",
+    "p1": {
+      "text1": "Eligibility for Refunds",
+      "text2": "Member Services: Refund requests for member services must be made within 3 days of purchase.",
+      "text3": "Accessed Content: If you have not used the benefits of your purchase, you are eligible for a refund.",
+      "text4": "Digital Courses: Once a digital product is downloaded or accessed, it is considered used, and used products cannot be refunded.",
+      "text5": "How to Request a Refund / Cancel Subscription",
+      "text6": "To request a refund, please follow these steps:"
+    },
+    "p2": {
+      "text1": "Cancel Subscription: Log in to your account, find and click the “Manage your billing” link at the bottom of the membership page. You will be redirected to a confirmation page where you can confirm your decision to unsubscribe."
+    },
+    "p3": {
+      "text1": "Please note that if you cancel your subscription, the cancellation will take effect at the start of the next billing cycle, and you will continue to have access to our services until the end of the current billing period."
+    },
+    "p4": {
+      "text1": "Contact Our Support: Contact our customer support team at support{'@'}ieltspractice.ai with your order number and the reason for the refund request."
+    },
+    "p5": {
+      "text1": "Review Process: Our team will review your request and respond within 3 business days."
+    },
+    "p6": {
+      "text1": "Exclusions",
+      "text2": "The following are not eligible for refunds:"
+    },
+    "p7": {
+      "text1": "Digital Products: Digital products that have been downloaded.",
+      "text2": "Third-Party Purchases: Products and services purchased through third-party vendors."
+    },
+    "p8": {
+      "text1": "Contact Us",
+      "text2": "If you have any questions about our refund policy or need assistance with your purchase, please contact us at:"
+    },
+    "p9": {
+      "text1": "Email: <span class='email_address'>support{'@'}ieltspractice.ai</span>",
+      "text2": "Response Time: We will respond to your inquiry within 3 business days."
+    }
+  },
+  "privacyPolicy": {
+    "h1": "Privacy Policy",
+    "updated": "Last updated: 2025-05-23",
+    "p0": "Welcome to IELTSPractice.ai (also referred to as “Company”, “We”, “Us”, or “Our”)! We are the operators of the website https://www.ieltspractice.ai (referred to as the “Website” or “Site”). This page outlines our policies on the collection, use, and disclosure of personal data when you use our Website, and the options available to you concerning that data.",
+    "p1": {
+      "text1": "Information Collection",
+      "text2": "We collect several types of information from and about users of our Website, including:"
+    },
+    "p2": {
+      "text1": "Personal Information",
+      "text2": "While using our Website, we may ask you to provide us with certain personally identifiable information (“Personal Information”) that can be used to contact or identify you. This Personal Information may include but is not limited to, your email address, name, phone number, and postal address."
+    },
+    "p3": {
+      "text1": "Usage Data",
+      "text2": "We may also collect information about how the Website is accessed and used (“Usage Data”). This Usage Data may include information such as your computer's Internet Protocol address (e.g., IP address), browser type, browser version, the pages of our Website that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers, and other diagnostic data."
+    },
+    "p4": {
+      "text1": "Cookies and Tracking Technologies",
+      "text2": "We may use cookies, web beacons, and other tracking technologies (“Cookies”) to gather information about your use of our Website and your interactions with our Website. This information may include your IP address, browser type, device type, and other usage details to help us provide you with a better user experience and improve our Website."
+    },
+    "p5": {
+      "text1": "Use of Information",
+      "text2": "We may use the information we collect from and about you for various purposes, including:",
+      "text3": "Providing, maintaining, and improving our Website;",
+      "text4": "Responding to your requests and providing customer support;",
+      "text5": "Communicating with you about our products, services, offers, promotions, and events;",
+      "text6": "Monitoring and analyzing trends, usage, and activities in connection with our Website;",
+      "text7": "Detecting, investigating, and preventing fraudulent transactions and other illegal activities;",
+      "text8": "Complying with legal obligations and enforcing our policies;",
+      "text9": "Carrying out any other purpose for which the information was collected."
+    },
+    "p6": {
+      "text1": "Disclosure of Information",
+      "text2": "We may share your information with third-party service providers who perform services on our behalf, including payment processors, hosting providers, and email service providers. Additionally, we may share your information with our affiliates, partners, and other third parties for marketing and advertising purposes.",
+      "text3": "We may disclose your information if we believe it is necessary to comply with applicable laws, regulations, legal processes, or governmental requests. We may also share your information if we believe it is necessary to investigate, prevent, or take action regarding illegal activities, suspected fraud, security issues, or violations of our policies. We will only disclose your information to the extent required or permitted by law or legal process."
+    },
+    "p7": {
+      "text1": "Security",
+      "text2": "While we take reasonable measures to ensure the security of your information, it's important to note that no security system is entirely foolproof, and we cannot guarantee the absolute security of your information."
+    },
+    "p8": {
+      "text1": "Links to Other Sites",
+      "text2": "Our Website may contain links to third-party websites that are not operated or controlled by us. If you click on a link to a third-party site, you will be directed to that site, and we encourage you to review the Privacy Policy of every website you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services."
+    },
+    "p9": {
+      "text1": "Children's Privacy",
+      "text2": "Our Website is not intended for individuals under the age of 13. We do not knowingly collect or solicit personal information from anyone under the age of 13. If you are a parent or guardian and become aware that your child has provided us with personal information, please contact us immediately. We will take steps to promptly remove such information from our records."
+    },
+    "p10": {
+      "text1": "Changes to This Privacy Policy",
+      "text2": "We may update our Privacy Policy periodically. Any changes to our Privacy Policy will be posted on this page, and we will not notify you of any significant changes in advance. We recommend that you review this Privacy Policy periodically to stay informed about how we collect, use, and protect your personal information."
+    },
+    "p11": {
+      "text1": "Contact Us",
+      "text2": "If you have any questions, concerns, or feedback about our Privacy Policy, please contact us at <span class='email_address'>support{'@'}IELTSPractice.ai</span>. We are committed to addressing your inquiries and will strive to respond as promptly as possible."
+    },
+    "p12": "This Privacy Policy applies exclusively to IELTSPractice.ai and is intended to inform you of our policies regarding the collection, use, and disclosure of personal information we receive from users of our Website."
+  },
+  "termsOfService": {
+    "h1": "Terms of Service",
+    "updated": "Last updated: 2025-05-23",
+    "p0": "Please read these Terms of Service (“Terms”, “TOS”) carefully before using the https://www.ieltspractice.ai website (the “Service”) operated by IELTSPractice.ai (“us”, “we”, or “our”).",
+    "p1": "Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service.",
+    "p2": "By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service.",
+    "p3": {
+      "text1": "Accounts",
+      "text2": "Account Information",
+      "text3": "When you create an account with us, you must provide accurate, complete, and current information at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service."
+    },
+    "p4": {
+      "text1": "Password Security",
+      "text2": "You are responsible for safeguarding the password you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service."
+    },
+    "p5": {
+      "text1": "Password Confidentiality",
+      "text2": "You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account."
+    },
+    "p6": {
+      "text1": "Restricted Usernames",
+      "text2": "You may not use another person or entity’s name, or names that are illegal or offensive, vulgar, or obscene as your username. We reserve the right to refuse service, terminate accounts, delete or edit content, or cancel orders at our sole discretion."
+    },
+    "p7": {
+      "text1": "Payment Terms",
+      "text2": "Service Fees",
+      "text3": "Some of the services we provide are fee-based. For specific information about fees, payment methods, and pricing, please refer to the pricing page on our website or contact us."
+    },
+    "p8": {
+      "text1": "Payment Methods",
+      "text2": "You may pay using the payment methods we accept, including but not limited to credit cards, debit cards, and other electronic payment methods. We will process your payment information and ensure its security."
+    },
+    "p9": {
+      "text1": "Subscription and Auto-Renewal",
+      "text2": "If you choose to subscribe to our services, you may be billed on a recurring basis according to the subscription plan you select. We will notify you of renewal details before the end of each subscription period and process renewal payments on your account."
+    },
+    "p10": {
+      "text1": "Refund Policy",
+      "text2": "Unless otherwise stated, all fees for our services are non-refundable. We may consider refund requests under certain circumstances, but such requests are at our sole discretion."
+    },
+    "p11": {
+      "text1": "Permitted Use and Prohibited Activities",
+      "text2": "Permitted Use",
+      "text3": "By using our Services, you acknowledge and agree that your usage is subject to these Terms and all applicable laws and regulations."
+    },
+    "p12": {
+      "text1": "Prohibited Activities",
+      "text2": "It is strictly prohibited to engage in any illegal, harmful, or abusive activities while using our Services. For example, you must not:"
+    },
+    "p13": "Use automated scripts or programs to manipulate or abuse our service. Deliberate attempts to exploit our system or circumvent usage limits may result in the immediate termination of your account. Legal action may also be taken if deemed necessary.",
+    "p14": "Use our services in a manner that infringes, misappropriates, or violates the rights of others.",
+    "p15": "Attempt to reverse engineer, decompile, or discover the source code or underlying components of our Services, including our models, algorithms, or systems (except where prohibited by applicable law).",
+    "p16": {
+      "text1": "Copyright",
+      "text2": "Intellectual Property",
+      "text3": "We respect the intellectual property rights of others and have a policy to respond to any claim that content posted on our Service infringes on the copyright or other intellectual property rights of any person or entity. If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement, please submit a claim to our Copyright Agent via email at support{'@'}ieltspractice.ai."
+    },
+    "p17": {
+      "text1": "Ownership",
+      "text2": "IELTSPractice.ai and its licensors own and retain all rights, title, and interest in and to the Service and its original content (excluding content provided by users), features, and functionality. The Service is protected by copyright, trademark, and other laws of the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of IELTSPractice.ai."
+    },
+    "p18": {
+      "text1": "Disclaimer",
+      "text2": "Service Provision",
+      "text3": "IELTSPractice.ai provides its services on an “AS IS” and “AS AVAILABLE” basis, and makes no representations or warranties of any kind, express or implied, as to the operation of the services, or the information, content, or materials included therein. Users expressly agree that their use of the services, their content, and any services or items obtained from IELTSPractice.ai is at their sole risk."
+    },
+    "p19": {
+      "text1": "No Warranty",
+      "text2": "Neither IELTSPractice.ai nor any person associated with IELTSPractice.ai makes any warranty or representation with respect to the completeness, security, reliability, quality, accuracy, or availability of the services. Without limiting the foregoing, neither IELTSPractice.ai nor anyone associated with IELTSPractice.ai represents or warrants that the services, their content, or any services or items obtained through the services will be accurate, reliable, error-free, or uninterrupted, that defects will be corrected, that the services or the server that makes it available are free of viruses or other harmful components, or that the services or any services or items obtained through the services will otherwise meet the users' needs or expectations."
+    },
+    "p20": {
+      "text1": "Links to Other Websites",
+      "text2": "Third-Party Websites",
+      "text3": "Our Service may contain links to third-party websites or services that are not owned or controlled by IELTSPractice.ai."
+    },
+    "p21": {
+      "text1": "No Control",
+      "text2": "IELTSPractice.ai has no control over and assumes no responsibility for the content, privacy policies, or practices of any third-party websites or services. You further acknowledge and agree that IELTSPractice.ai shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services."
+    },
+    "p22": {
+      "text1": "Advice to Review Policies",
+      "text2": "We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or services that you visit."
+    },
+    "p23": {
+      "text1": "Termination",
+      "text2": "Termination Rights",
+      "text3": "We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms."
+    },
+    "p24": {
+      "text1": "Effect of Termination",
+      "text2": "Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service."
+    },
+    "p25": {
+      "text1": "Survival of Terms",
+      "text2": "All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability."
+    },
+    "p26": {
+      "text1": "Governing Law",
+      "text2": "Applicable Law",
+      "text3": "These Terms shall be governed and construed in accordance with the laws of the United States without regard to its conflict of law provisions."
+    },
+    "p27": {
+      "text1": "No Waiver",
+      "text2": "Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service and supersede and replace any prior agreements we might have between us regarding the Service."
+    },
+    "p28": {
+      "text1": "Changes",
+      "text2": "Right to Modify",
+      "text3": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 15 days’ notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion."
+    },
+    "p29": {
+      "text1": "Acceptance of Changes",
+      "text2": "By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service."
+    },
+    "p30": {
+      "text1": "Contact Us",
+      "text2": "If you have any questions about these Terms, please contact us via email at <span class='email_address'>support{'@'}ieltspractice.ai</span>."
+    }
+  }
+}
