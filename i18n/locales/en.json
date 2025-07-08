@@ -4,9 +4,13 @@
   "Case": "Case",
   "Q&A": "Q&A",
   "index": {
+    "SeoMeta": {
+      "title": "Best IELTS Practice Platform | IELTSpractice.ai",
+      "description": "Smarter IELTS practice powered by AI. Get unlimited tests, instant writing & speaking feedback, and personalized insights to boost your score. Try it today!"
+    },
     "party1": {
-      "h1": "#1 IELTS Practice Website",
-      "h2": "The World's Best Way to Learn IELTS",
+      "p0": "#1 IELTS Practice Website",
+      "h1": "All-in-One IELTS Practice to Boost Your Score Faster",
       "p": "Effortlessly secure high IELTS scores with our scientifically designed, AI-powered practice platform. Study just a bit each day, and you'll easily conquer the exam!",
       "SignUPWithGoogle": "Sign Up With Google",
       "StartForFree": "Start For Free"
@@ -87,6 +91,10 @@
     "BackTOLogin": "< Back to login"
   },
   "refundPolicy": {
+    "SeoMeta": {
+      "title": "Read the refund policy for IELTSpractice.ai. ",
+      "description": "Read the refund policy for IELTSpractice.ai. Understand eligibility, conditions, and procedures for requesting refunds on our IELTS practice services."
+    },
     "h1": "Refund Policy",
     "updated": "Last updated: 2025-05-23",
     "p0": "Thank you for choosing and purchasing our services. We strive to provide the best learning experience for our customers. However, if you are not entirely satisfied with your purchase, we're here to help.",
@@ -128,6 +136,10 @@
     }
   },
   "privacyPolicy": {
+    "SeoMeta": {
+      "title": "Privacy Policy | IELTSpractice.ai",
+      "description": "Learn how IELTSpractice.ai collects, uses, and protects your personal information in accordance with privacy laws and best practices."
+    },
     "h1": "Privacy Policy",
     "updated": "Last updated: 2025-05-23",
     "p0": "Welcome to IELTSPractice.ai (also referred to as “Company”, “We”, “Us”, or “Our”)! We are the operators of the website https://www.ieltspractice.ai (referred to as the “Website” or “Site”). This page outlines our policies on the collection, use, and disclosure of personal data when you use our Website, and the options available to you concerning that data.",
@@ -186,6 +198,10 @@
     "p12": "This Privacy Policy applies exclusively to IELTSPractice.ai and is intended to inform you of our policies regarding the collection, use, and disclosure of personal information we receive from users of our Website."
   },
   "termsOfService": {
+    "SeoMeta": {
+      "title": "Terms of Service | IELTSpractice.ai",
+      "description": "Review the terms of service for using IELTSpractice.ai. Learn about user responsibilities, platform rules, and legal agreements."
+    },
     "h1": "Terms of Service",
     "updated": "Last updated: 2025-05-23",
     "p0": "Please read these Terms of Service (“Terms”, “TOS”) carefully before using the https://www.ieltspractice.ai website (the “Service”) operated by IELTSPractice.ai (“us”, “we”, or “our”).",

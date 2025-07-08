@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { googlePopupLogin } from "@/utils/googleAuth";
 import { login } from "@/utils/api";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+useSeoMeta({
+  title: t('index.SeoMeta.title'),
+  description: t('index.SeoMeta.description'),
+});
 
 const googleLogin = async () => {
   const res: any = await googlePopupLogin();
@@ -77,9 +83,9 @@ const review_list = computed(() => [
   <div class="home">
     <div class="part1">
       <div class="title">
-        <h1 class="h_one">{{ $t("index.party1.h1") }}</h1>
+        <p class="titleBox">{{ $t("index.party1.p0") }}</p>
       </div>
-      <h2 class="h_two">{{ $t("index.party1.h2") }}</h2>
+      <h1 class="h_one">{{ $t("index.party1.h1") }}</h1>
       <div class="subtitle">
         <p>{{ $t("index.party1.p") }}</p>
       </div>
@@ -278,7 +284,7 @@ const review_list = computed(() => [
       align-items: center;
       justify-content: center;
 
-      .h_one {
+      .titleBox {
         max-width: 400px;
         width: 100%;
         height: 56px;
@@ -295,7 +301,7 @@ const review_list = computed(() => [
       }
     }
 
-    .h_two {
+    .h_one {
       margin: 16px 0 24px;
       font-weight: bold;
       font-size: 56px;
@@ -704,7 +710,7 @@ const review_list = computed(() => [
     .part1 {
       padding: 60px 80px;
 
-      .h_two {
+      .h_one {
         font-size: 40px;
         line-height: 56px;
       }
@@ -749,7 +755,7 @@ const review_list = computed(() => [
     .part1 {
       padding: 30px 30px;
 
-      .h_two {
+      .h_one {
         font-size: 40px;
         line-height: 56px;
       }
