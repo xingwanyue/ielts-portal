@@ -61,9 +61,11 @@ watch(
 
 <template>
   <div class="header_box">
-    <div class="logo">
-      <img src="../assets/logo.png" alt="IELTSPractice" loading="lazy">
-    </div>
+    <nuxt-link :to="localePath('/')">
+      <div class="logo">
+        <img src="../assets/logo.png" alt="IELTSPractice" loading="lazy">
+      </div>
+    </nuxt-link>
     <div class="menus">
       <nav v-for="menu in menus" :key="menu.path" :class="`menu ${pathname === menu.path
         ? 'active'
@@ -85,9 +87,11 @@ watch(
   </div>
   <MyDrawer v-model:showDrawer="state.showDrawer" class="drawer">
     <template #title>
-      <div class="logo">
-        <img src="../assets/logo.png" alt="IELTSPractice" loading="lazy">
-      </div>
+      <nuxt-link :to="localePath('/')"  @click="state.showDrawer = false">
+        <div class="logo">
+          <img src="../assets/logo.png" alt="IELTSPractice" loading="lazy">
+        </div>
+      </nuxt-link>
     </template>
     <template #content>
       <div class="content">
@@ -98,9 +102,9 @@ watch(
             </nuxt-link>
           </div>
         </div>
-        <nuxt-link @click="login" class="mobile_login">
+        <div @click="login" class="mobile_login">
           log in
-        </nuxt-link>
+        </div>
       </div>
     </template>
   </MyDrawer>
