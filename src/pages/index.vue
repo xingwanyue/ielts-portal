@@ -116,7 +116,7 @@ const review_list = computed(() => [
       </div>
       <div class="article_img">
         <div class="img">
-          <img src="/image/home/home1.webp" loading="lazy" alt="" />
+          <img src="/image/home/home2.webp" loading="lazy" alt="" />
         </div>
         <div class="article">
           <div class="article_content">
@@ -135,7 +135,7 @@ const review_list = computed(() => [
       </div>
       <div class="img_article">
         <div class="img">
-          <img src="/image/home/home1.webp" loading="lazy" alt="" />
+          <img src="/image/home/home3.webp" loading="lazy" alt="" />
         </div>
         <div class="article">
           <div class="article_content">
@@ -152,7 +152,7 @@ const review_list = computed(() => [
       </div>
       <div class="article_img">
         <div class="img">
-          <img src="/image/home/home1.webp" loading="lazy" alt="" />
+          <img src="/image/home/home4.webp" loading="lazy" alt="" />
         </div>
         <div class="article">
           <div class="article_content">
