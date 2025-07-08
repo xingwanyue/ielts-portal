@@ -72,6 +72,16 @@ export default defineNuxtConfig({
           src: "https://accounts.google.com/gsi/client",
           async: true,
         },
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-BTN96NLD4D",
+          async: true,
+        },
+        {
+          innerHTML: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3KGB3XGBQB');`,
+        },
       ],
     },
   },
