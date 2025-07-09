@@ -1,4 +1,4 @@
-export const api = `https://api.ieltspractice.ai/`;
+export const api = `https://api.ieltspractice.ai`;
 import { fetchMy } from '@/utils/request';
 export const login = async (args: any) => {
   const res = await fetchMy(`${api}/common/login`, {
