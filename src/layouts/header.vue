@@ -9,54 +9,59 @@ const localePath = useLocalePath();
 
 const route = useRoute();
 const pathname = computed(() => {
-  const pathParts = route.path.split('/');
-  const newPathParts = pathParts[pathParts.length - 1] === locale.value ? pathParts.slice(0, -1) : pathParts;
+  const pathParts = route.path.split("/");
+  const newPathParts =
+    pathParts[pathParts.length - 1] === locale.value
+      ? pathParts.slice(0, -1)
+      : pathParts;
   if (!newPathParts || newPathParts.length === 0) {
-    return '/';
+    return "/";
   }
   return `/${newPathParts[newPathParts.length - 1]}`;
 });
-const menus = computed(() => [
-  // {
-  //   name: t('Home'),
-  //   path: '/',
-  // },
-  // {
-  //   name: t('IELTS'),
-  //   path: '/IELTS',
-  // },
-  // {
-  //   name: t('Case'),
-  //   path: '/case',
-  // },
-  // {
-  //   name: t('Q&A'),
-  //   path: '/questionAndAnswer',
-  // },
-]);
+const menus = computed(
+  () =>
+    [
+      // {
+      //   name: t('Home'),
+      //   path: '/',
+      // },
+      // {
+      //   name: t('IELTS'),
+      //   path: '/IELTS',
+      // },
+      // {
+      //   name: t('Case'),
+      //   path: '/case',
+      // },
+      // {
+      //   name: t('Q&A'),
+      //   path: '/questionAndAnswer',
+      // },
+    ] as any
+);
 const state = reactive({
   showDrawer: false,
 });
 const login = () => {
   state.showDrawer = false;
   setLoginVisible(true);
-  setLoginType('login');
-}
+  setLoginType("login");
+};
 const signUp = () => {
   setLoginVisible(true);
-  setLoginType('register');
-}
+  setLoginType("register");
+};
 watch(
   () => state.showDrawer,
   (newVal) => {
     if (newVal) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = ''
+      document.body.style.overflow = "";
     }
   }
-)
-
+);
 </script>
 
 <template>
@@ -67,29 +72,29 @@ watch(
       </div>
     </nuxt-link>
     <div class="menus">
-      <nav v-for="menu in menus" :key="menu.path" :class="`menu ${pathname === menu.path
-        ? 'active'
-        : ''
-        }`">
-
-        <nuxt-link :to="localePath(menu.path)" :title="menu.name">{{ menu.name }}
+      <nav
+        v-for="menu in menus"
+        :key="menu.path"
+        :class="`menu ${pathname === menu.path ? 'active' : ''}`"
+      >
+        <nuxt-link :to="localePath(menu.path)" :title="menu.name"
+          >{{ menu.name }}
         </nuxt-link>
       </nav>
     </div>
     <div class="rightBtn">
-      <div class="login btn" @click="login">{{ $t('header.logIn') }}</div>
-      <div class="signUP" @click="signUp">{{ $t('header.signUp') }}</div>
+      <div class="login btn" @click="login">{{ $t("header.logIn") }}</div>
+      <div class="signUP" @click="signUp">{{ $t("header.signUp") }}</div>
     </div>
     <div class="mobile_menu btn" @click="state.showDrawer = true">
       <img src="../assets/menu.svg" class="mobileMenus" alt="menu" />
     </div>
-
   </div>
   <MyDrawer v-model:showDrawer="state.showDrawer" class="drawer">
     <template #title>
-      <nuxt-link :to="localePath('/')"  @click="state.showDrawer = false">
+      <nuxt-link :to="localePath('/')" @click="state.showDrawer = false">
         <div class="logo">
-          <img src="../assets/logo.svg" alt="IELTSPractice" loading="lazy">
+          <img src="../assets/logo.png" alt="IELTSPractice" loading="lazy" />
         </div>
       </nuxt-link>
     </template>
@@ -97,14 +102,17 @@ watch(
       <div class="content">
         <div class="menu_list">
           <div v-for="menu in menus" :key="menu.path" class="mobile_menu_item">
-            <nuxt-link class="item" :href="menu.path" @click="state.showDrawer = false" :title="menu.name">
+            <nuxt-link
+              class="item"
+              :href="menu.path"
+              @click="state.showDrawer = false"
+              :title="menu.name"
+            >
               {{ menu.name }}
             </nuxt-link>
           </div>
         </div>
-        <div @click="login" class="mobile_login">
-          log in
-        </div>
+        <div @click="login" class="mobile_login">log in</div>
       </div>
     </template>
   </MyDrawer>
@@ -125,7 +133,7 @@ watch(
 
     &:hover {
       filter: brightness(0.9);
-      color: #0058FE;
+      color: #0058fe;
     }
   }
 
@@ -142,18 +150,18 @@ watch(
     gap: 80px;
     font-weight: 400;
     font-size: 18px;
-    color: #171C1D;
+    color: #171c1d;
     line-height: 18px;
     box-sizing: border-box;
 
     .menu {
       &:hover {
-        color: #0058FE !important;
+        color: #0058fe !important;
       }
     }
 
     .active {
-      color: #0058FE;
+      color: #0058fe;
       font-weight: bold;
     }
   }
@@ -168,11 +176,11 @@ watch(
 
     .signUP {
       padding: 9px 20px;
-      background: #0058FE;
+      background: #0058fe;
       border-radius: 8px 8px 8px 8px;
       font-weight: bold;
       font-size: 16px;
-      color: #FFFFFF;
+      color: #ffffff;
       line-height: 16px;
       text-align: left;
       box-sizing: border-box;
@@ -194,7 +202,6 @@ watch(
       height: 100%;
     }
   }
-
 }
 
 .drawer {
@@ -233,14 +240,13 @@ watch(
           font-size: 16px;
           font-weight: 600;
           text-decoration: none;
-
         }
       }
     }
 
     .mobile_login {
       margin-bottom: 15px;
-      background-color: #0058FE;
+      background-color: #0058fe;
       border-radius: 25px;
       color: #fff;
       display: block;

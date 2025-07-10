@@ -1,17 +1,70 @@
 <script setup lang="ts">
 import vFooter from "./footer.vue";
 import vHeader from "./header.vue";
+
+const props = defineProps({
+  errorPage: Boolean,
+}) as any;
+
 const state = reactive({
   visible: false,
 });
-// 禁止索引 上限后需判断处理
+const requestUrl = useRequestURL();
+const route = useRoute();
+const { locale } = useI18n();
+
+/**
+ * 开启语言后请放开
+ */
+const locales = {
+  en: "US",
+  // id: "ID",
+  // jp: "JP",
+  // kr: "KR",
+  // ru: "RU",
+  // tr: "TR",
+  // de: "DE",
+  // es: "ES",
+  // fr: "FR",
+  // it: "IT",
+  // th: "TH",
+  // zh: "CN",
+};
+const meta = [
+  // 当前语言
+  {
+    property: "og:locale",
+    content: () => `${locale.value}_${locales[locale.value]}`,
+  },
+] as any;
+
+if (requestUrl.host !== "ieltspractice.ai") {
+  meta.push({ name: "robots", content: "noindex" });
+}
+
+const currentPathWithoutLocale =
+  route.path.replace(new RegExp(`^/${locale.value}`), "") || "/";
+// 如果多语言 每种语言
+const alternates = Object.keys(locales).map((hreflang: string) => ({
+  rel: "alternate",
+  hreflang: hreflang,
+  href: () =>
+    `http://${requestUrl.host}${
+      hreflang === "en" ? "" : `/${hreflang}`
+    }${currentPathWithoutLocale}`,
+}));
+
 useHead({
-  meta: [
-    {
-      name: "robots",
-      content: "noindex",
-    },
-  ],
+  meta,
+  link: props.errorPage
+    ? []
+    : [
+        {
+          rel: "canonical",
+          href: () => requestUrl.href,
+        },
+        ...alternates,
+      ],
 });
 </script>
 <template>
