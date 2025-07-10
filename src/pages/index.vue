@@ -797,7 +797,28 @@ const review_list = computed(() => [
     .part5 {
       .box {
         margin-top: 30px;
-        padding: 30px 0;
+        padding: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .part4 {
+    .ask_and_answer {
+      .ask {
+        font-size: 20px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .part1 {
+    .title {
+      .titleBox {
+        font-size: 20px !important;
+        padding: 12px 20px !important;
       }
     }
   }

@@ -63,7 +63,7 @@ watch(
   <div class="header_box">
     <nuxt-link :to="localePath('/')">
       <div class="logo">
-        <img src="../assets/logo.png" alt="IELTSPractice" loading="lazy">
+        <img src="../assets/logo.svg" alt="IELTSPractice" loading="lazy">
       </div>
     </nuxt-link>
     <div class="menus">
@@ -89,7 +89,7 @@ watch(
     <template #title>
       <nuxt-link :to="localePath('/')"  @click="state.showDrawer = false">
         <div class="logo">
-          <img src="../assets/logo.png" alt="IELTSPractice" loading="lazy">
+          <img src="../assets/logo.svg" alt="IELTSPractice" loading="lazy">
         </div>
       </nuxt-link>
     </template>
