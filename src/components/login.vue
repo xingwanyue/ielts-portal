@@ -835,7 +835,7 @@ const reset = () => {
 
   .close_btn {
     position: absolute;
-    top: 12px;
+    top: 24px;
     right: 24px;
     cursor: pointer;
     width: 18px;
