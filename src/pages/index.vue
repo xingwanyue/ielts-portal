@@ -427,7 +427,7 @@ const review_list = computed(() => [
             font-weight: bold;
             font-size: 32px;
             color: #171c1d;
-            line-height: 28px;
+            line-height: 32px;
             text-align: left;
           }
 
