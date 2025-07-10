@@ -837,9 +837,9 @@ const review_list = computed(() => [
   .part5 {
     .box {
       h2 {
-        font-size: 40px;
-        line-height: 56px;
-        word-wrap: break-word;
+        font-size: 40px!important;
+        line-height: 56px!important;
+        word-wrap: break-word!important;
       }
     }
   }
