@@ -185,9 +185,11 @@ const review_list = computed(() => [
               <div class="avatar">
                 <img :src="item.avatar" :alt="item.nickname" loading="lazy" />
               </div>
-              <div class="nickname">{{ item.nickname }}</div>
-              <div class="star">
-                <img src="../assets/home/five_star.svg" alt="five_star" />
+              <div class="right">
+                <div class="nickname">{{ item.nickname }}</div>
+                <div class="star">
+                  <img src="../assets/home/five_star.svg" alt="five_star" />
+                </div>
               </div>
             </div>
             <div class="bottom">
@@ -527,14 +529,26 @@ const review_list = computed(() => [
               }
             }
 
-            .nickname {
+            .right {
               flex: auto;
               margin-left: 16px;
-              font-size: 16px;
-              color: #171c1d;
-              line-height: 28px;
-              flex: auto;
+              display: flex;
+              flex-wrap: wrap;
 
+              .nickname {
+                flex: auto;
+                font-size: 16px;
+                color: #171c1d;
+                line-height: 28px;
+                flex: auto;
+              }
+
+              .star {
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
             }
           }
 
@@ -837,9 +851,9 @@ const review_list = computed(() => [
   .part5 {
     .box {
       h2 {
-        font-size: 40px!important;
-        line-height: 56px!important;
-        word-wrap: break-word!important;
+        font-size: 40px !important;
+        line-height: 56px !important;
+        word-wrap: break-word !important;
       }
     }
   }
