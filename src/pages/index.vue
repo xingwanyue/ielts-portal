@@ -533,7 +533,6 @@ const review_list = computed(() => [
               flex: auto;
               margin-left: 16px;
               display: flex;
-              flex-wrap: wrap;
 
               .nickname {
                 flex: auto;
@@ -844,6 +843,23 @@ const review_list = computed(() => [
       .titleBox {
         font-size: 20px !important;
         padding: 12px 20px !important;
+      }
+    }
+  }
+
+  .part3 {
+    .review {
+      .review_list {
+        .top {
+          .right {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .star {
+              height: 16px;
+            }
+          }
+        }
       }
     }
   }
