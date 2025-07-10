@@ -27,14 +27,24 @@ const localePath = useLocalePath();
   border-top: 1px solid #EDEDED;
   max-width: 1280px;
   margin: 0 auto;
-  height: 102px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
 
   @media screen and (max-width: 1280px) {
-    padding: 0 30px;
+    padding: 30px;
+  }
+
+  @media screen and (max-width: 460px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .right {
+      align-items: flex-start !important;
+    }
   }
 
   .left {

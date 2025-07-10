@@ -100,7 +100,6 @@ useHead({
     flex: auto;
   }
   .footer {
-    height: 100px;
     flex: none;
     margin-top: 80px;
   }

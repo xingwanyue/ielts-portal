@@ -185,9 +185,11 @@ const review_list = computed(() => [
               <div class="avatar">
                 <img :src="item.avatar" :alt="item.nickname" loading="lazy" />
               </div>
-              <div class="nickname">{{ item.nickname }}</div>
-              <div class="star">
-                <img src="../assets/home/five_star.svg" alt="five_star" />
+              <div class="right">
+                <div class="nickname">{{ item.nickname }}</div>
+                <div class="star">
+                  <img src="../assets/home/five_star.svg" alt="five_star" />
+                </div>
               </div>
             </div>
             <div class="bottom">
@@ -200,43 +202,53 @@ const review_list = computed(() => [
     <div class="part4">
       <h2>{{ $t('index.party4.h2') }}</h2>
       <div class="ask_and_answer">
-        <div class="ask">{{ $t('index.party4.question1') }}</div>
+        <div class="ask">
+          <div>{{ $t('index.party4.question1') }}</div>
+          <div class="switch btn" @click="switchChange(0)">
+            <img v-if="state.flagList[0]" src="../assets/home/open.svg" alt="open" />
+            <img v-else src="../assets/home/close.svg" alt="close" />
+          </div>
+        </div>
         <div v-show="!state.flagList[0]" class="answer">
           {{ $t('index.party4.answer1') }}
         </div>
-        <div class="switch btn" @click="switchChange(0)">
-          <img v-if="state.flagList[0]" src="../assets/home/open.svg" alt="open" />
-          <img v-else src="../assets/home/close.svg" alt="close" />
-        </div>
       </div>
       <div class="ask_and_answer mt24">
-        <div class="ask">{{ $t('index.party4.question2') }}</div>
+        <div class="ask">
+          <div>{{ $t('index.party4.question2') }}</div>
+          <div class="switch btn" @click="switchChange(1)">
+            <img v-if="state.flagList[1]" src="../assets/home/open.svg" alt="open" />
+            <img v-else src="../assets/home/close.svg" alt="close" />
+          </div>
+        </div>
         <div v-show="!state.flagList[1]" class="answer">
           {{ $t('index.party4.answer2') }}
         </div>
-        <div class="switch btn" @click="switchChange(1)">
-          <img v-if="state.flagList[1]" src="../assets/home/open.svg" alt="open" />
-          <img v-else src="../assets/home/close.svg" alt="close" />
-        </div>
+
       </div>
       <div class="ask_and_answer mt24">
-        <div class="ask">{{ $t('index.party4.question3') }}</div>
+        <div class="ask">
+          <div>{{ $t('index.party4.question3') }}</div>
+          <div class="switch btn" @click="switchChange(2)">
+            <img v-if="state.flagList[2]" src="../assets/home/open.svg" alt="open" />
+            <img v-else src="../assets/home/close.svg" alt="close" />
+          </div>
+        </div>
         <div v-show="!state.flagList[2]" class="answer">
           {{ $t('index.party4.answer3') }}
         </div>
-        <div class="switch btn" @click="switchChange(2)">
-          <img v-if="state.flagList[2]" src="../assets/home/open.svg" alt="open" />
-          <img v-else src="../assets/home/close.svg" alt="close" />
-        </div>
+
       </div>
       <div class="ask_and_answer mt24">
-        <div class="ask">{{ $t('index.party4.question4') }}</div>
+        <div class="ask">
+          <div>{{ $t('index.party4.question4') }}</div>
+          <div class="switch btn" @click="switchChange(3)">
+            <img v-if="state.flagList[3]" src="../assets/home/open.svg" alt="open" />
+            <img v-else src="../assets/home/close.svg" alt="close" />
+          </div>
+        </div>
         <div v-show="!state.flagList[3]" class="answer">
           {{ $t('index.party4.answer4') }}
-        </div>
-        <div class="switch btn" @click="switchChange(3)">
-          <img v-if="state.flagList[3]" src="../assets/home/open.svg" alt="open" />
-          <img v-else src="../assets/home/close.svg" alt="close" />
         </div>
       </div>
     </div>
@@ -417,7 +429,7 @@ const review_list = computed(() => [
             font-weight: bold;
             font-size: 32px;
             color: #171c1d;
-            line-height: 28px;
+            line-height: 32px;
             text-align: left;
           }
 
@@ -432,6 +444,7 @@ const review_list = computed(() => [
           .btn {
             margin-top: 48px;
             max-width: 156px;
+            height: 40px;
             width: 100%;
             padding: 10px 32px;
             background: #0058fe;
@@ -516,14 +529,26 @@ const review_list = computed(() => [
               }
             }
 
-            .nickname {
+            .right {
               flex: auto;
               margin-left: 16px;
-              font-size: 16px;
-              color: #171c1d;
-              line-height: 28px;
-              flex: auto;
+              display: flex;
+              flex-wrap: wrap;
 
+              .nickname {
+                flex: auto;
+                font-size: 16px;
+                color: #171c1d;
+                line-height: 28px;
+                flex: auto;
+              }
+
+              .star {
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
             }
           }
 
@@ -598,6 +623,16 @@ const review_list = computed(() => [
         color: #171c1d;
         line-height: 26px;
         text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .switch {
+          width: 32px;
+          height: 32px;
+          background-color: #0058fe;
+          border-radius: 50%;
+        }
       }
 
       .answer {
@@ -607,16 +642,6 @@ const review_list = computed(() => [
         color: #3d3f40;
         line-height: 26px;
         text-align: left;
-      }
-
-      .switch {
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        background-color: #0058fe;
-        top: 32px;
-        right: 32px;
-        border-radius: 50%;
       }
     }
   }
@@ -797,7 +822,38 @@ const review_list = computed(() => [
     .part5 {
       .box {
         margin-top: 30px;
-        padding: 30px 0;
+        padding: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .part4 {
+    .ask_and_answer {
+      .ask {
+        font-size: 20px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .part1 {
+    .title {
+      .titleBox {
+        font-size: 20px !important;
+        padding: 12px 20px !important;
+      }
+    }
+  }
+
+  .part5 {
+    .box {
+      h2 {
+        font-size: 40px !important;
+        line-height: 56px !important;
+        word-wrap: break-word !important;
       }
     }
   }
