@@ -98,14 +98,14 @@ const review_list = computed(() => [
         </div>
       </div>
       <div class="bigImg">
-        <img src="/image/home/big_img.webp" alt="" fetchpriority="high" />
+        <img src="/image/home/big_img.webp" :alt="$t('index.party1.p0')" fetchpriority="high" />
       </div>
     </div>
     <div class="part2">
       <h2 class="h_two">{{ $t("index.party2.h2") }}</h2>
       <div class="img_article">
         <div class="img">
-          <img src="/image/home/home1.webp" loading="lazy" alt="" />
+          <img src="/image/home/home1.webp" loading="lazy" :alt="$t('index.party2.h3_1')" />
         </div>
         <div class="article">
           <div class="article_content">
@@ -122,7 +122,7 @@ const review_list = computed(() => [
       </div>
       <div class="article_img">
         <div class="img">
-          <img src="/image/home/home2.webp" loading="lazy" alt="" />
+          <img src="/image/home/home2.webp" loading="lazy" :alt="$t('index.party2.h3_2')" />
         </div>
         <div class="article">
           <div class="article_content">
@@ -141,7 +141,7 @@ const review_list = computed(() => [
       </div>
       <div class="img_article">
         <div class="img">
-          <img src="/image/home/home3.webp" loading="lazy" alt="" />
+          <img src="/image/home/home3.webp" loading="lazy" :alt="$t('index.party2.h3_3')" />
         </div>
         <div class="article">
           <div class="article_content">
@@ -158,7 +158,7 @@ const review_list = computed(() => [
       </div>
       <div class="article_img">
         <div class="img">
-          <img src="/image/home/home4.webp" loading="lazy" alt="" />
+          <img src="/image/home/home4.webp" loading="lazy" :alt="$t('index.party2.h3_4')" />
         </div>
         <div class="article">
           <div class="article_content">
@@ -254,7 +254,7 @@ const review_list = computed(() => [
     </div>
     <div class="part5">
       <div class="box">
-        <img class="boxBg" src="/image/home/bottom_background.webp" alt="" loading="lazy" />
+        <img class="boxBg" src="/image/home/bottom_background.webp" :alt="$t('index.party5.bgcAlt')" loading="lazy" />
         <h2>
           {{ $t("index.party5.h2") }}
         </h2>

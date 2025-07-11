@@ -45,7 +45,8 @@
     "party5": {
       "h2": " Ready to boost your IELTS scores? Sign up at ieltspractice.ai today !",
       "SignUPWithGoogle": "Sign Up With Google",
-      "StartForFree": "Start For Free"
+      "StartForFree": "Start For Free",
+      "bgcAlt": "blue background"
     }
   },
   "header": {
@@ -88,7 +89,13 @@
     "pwf1strc": "Please wait for 120 seconds to reset code",
     "NewPassword": "New password",
     "ConfirmNewPassword": "Confirm new Password",
-    "BackTOLogin": "< Back to login"
+    "BackTOLogin": "< Back to login",
+    "googleImgAlt": "Google",
+    "lockImgAlt": "Lock",
+    "eyeImgAlt": "Eye",
+    "eyeSlashImgAlt": "Eye Slash",
+    "errorImgAlt": "Error",
+    "closeImgAlt": "Close"
   },
   "refundPolicy": {
     "SeoMeta": {
