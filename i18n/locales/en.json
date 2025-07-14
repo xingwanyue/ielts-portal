@@ -5,7 +5,7 @@
   "Q&A": "Q&A",
   "index": {
     "SeoMeta": {
-      "title": "Best IELTS Practice Platform | IELTSpractice.ai",
+      "title": "Best IELTS Practice Platform {'|'} IELTSpractice.ai",
       "description": "Smarter IELTS practice powered by AI. Get unlimited tests, instant writing & speaking feedback, and personalized insights to boost your score. Try it today!"
     },
     "party1": {
@@ -99,7 +99,7 @@
   },
   "refundPolicy": {
     "SeoMeta": {
-      "title": "Read the refund policy for IELTSpractice.ai. ",
+      "title": "Refund Policy {'|'} IELTSpractice.ai",
       "description": "Read the refund policy for IELTSpractice.ai. Understand eligibility, conditions, and procedures for requesting refunds on our IELTS practice services."
     },
     "h1": "Refund Policy",
@@ -136,7 +136,7 @@
   },
   "privacyPolicy": {
     "SeoMeta": {
-      "title": "Privacy Policy | IELTSpractice.ai",
+      "title": "Privacy Policy {'|'} IELTSpractice.ai",
       "description": "Learn how IELTSpractice.ai collects, uses, and protects your personal information in accordance with privacy laws and best practices."
     },
     "h1": "Privacy Policy",
@@ -192,7 +192,7 @@
   },
   "termsOfService": {
     "SeoMeta": {
-      "title": "Terms of Service | IELTSpractice.ai",
+      "title": "Terms of Service {'|'} IELTSpractice.ai",
       "description": "Review the terms of service for using IELTSpractice.ai. Learn about user responsibilities, platform rules, and legal agreements."
     },
     "h1": "Terms of Service",
