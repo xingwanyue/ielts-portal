@@ -14,58 +14,52 @@ useSeoMeta({
     <div class="content">
       <div>{{ $t('privacyPolicy.p0') }}</div>
       <div>
-        <div>{{ $t('privacyPolicy.p1.text1') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p1.text1') }}</div>
         <div>{{ $t('privacyPolicy.p1.text2') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p1.text3') }}</div>
+        <div>{{ $t('privacyPolicy.p1.text4') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p1.text5') }}</div>
+        <div>{{ $t('privacyPolicy.p1.text6') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p1.text7') }}</div>
+        <div>{{ $t('privacyPolicy.p1.text8') }}</div>
       </div>
       <div>
-        <div>{{ $t('privacyPolicy.p2.text1') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p2.text1') }}</div>
         <div>{{ $t('privacyPolicy.p2.text2') }}</div>
+        <div>{{ $t('privacyPolicy.p2.text3') }}</div>
+        <div>{{ $t('privacyPolicy.p2.text4') }}</div>
+        <div>{{ $t('privacyPolicy.p2.text5') }}</div>
+        <div>{{ $t('privacyPolicy.p2.text6') }}</div>
+        <div>{{ $t('privacyPolicy.p2.text7') }}</div>
+        <div>{{ $t('privacyPolicy.p2.text8') }}</div>
+        <div>{{ $t('privacyPolicy.p2.text9') }}</div>
       </div>
       <div>
-        <div>{{ $t('privacyPolicy.p3.text1') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p3.text1') }}</div>
         <div>{{ $t('privacyPolicy.p3.text2') }}</div>
+        <div>{{ $t('privacyPolicy.p3.text3') }}</div>
       </div>
       <div>
-        <div>{{ $t('privacyPolicy.p4.text1') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p4.text1') }}</div>
         <div>{{ $t('privacyPolicy.p4.text2') }}</div>
       </div>
       <div>
-        <div>{{ $t('privacyPolicy.p5.text1') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p5.text1') }}</div>
         <div>{{ $t('privacyPolicy.p5.text2') }}</div>
-        <div>{{ $t('privacyPolicy.p5.text3') }}</div>
-        <div>{{ $t('privacyPolicy.p5.text4') }}</div>
-        <div>{{ $t('privacyPolicy.p5.text5') }}</div>
-        <div>{{ $t('privacyPolicy.p5.text6') }}</div>
-        <div>{{ $t('privacyPolicy.p5.text7') }}</div>
-        <div>{{ $t('privacyPolicy.p5.text8') }}</div>
-        <div>{{ $t('privacyPolicy.p5.text9') }}</div>
       </div>
       <div>
-        <div>{{ $t('privacyPolicy.p6.text1') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p6.text1') }}</div>
         <div>{{ $t('privacyPolicy.p6.text2') }}</div>
-        <div>{{ $t('privacyPolicy.p6.text3') }}</div>
       </div>
       <div>
-        <div>{{ $t('privacyPolicy.p7.text1') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p7.text1') }}</div>
         <div>{{ $t('privacyPolicy.p7.text2') }}</div>
       </div>
       <div>
-        <div>{{ $t('privacyPolicy.p8.text1') }}</div>
-        <div>{{ $t('privacyPolicy.p8.text2') }}</div>
+        <div class="fontWeight">{{ $t('privacyPolicy.p8.text1') }}</div>
+        <div v-html="$t('privacyPolicy.p8.text2')"></div>
       </div>
-      <div>
-        <div>{{ $t('privacyPolicy.p9.text1') }}</div>
-        <div>{{ $t('privacyPolicy.p9.text2') }}</div>
-      </div>
-      <div>
-        <div>{{ $t('privacyPolicy.p10.text1') }}</div>
-        <div>{{ $t('privacyPolicy.p10.text2') }}</div>
-      </div>
-      <div>
-        <div>{{ $t('privacyPolicy.p11.text1') }}</div>
-        <div v-html="$t('privacyPolicy.p11.text2')"></div>
-      </div>
-      <div>{{ $t('privacyPolicy.p12') }}</div>
+      <div>{{ $t('privacyPolicy.p9') }}</div>
     </div>
   </div>
 </template>
@@ -107,6 +101,11 @@ useSeoMeta({
     gap: 30px;
     display: flex;
     flex-direction: column;
+
+    .fontWeight {
+      font-weight: bold;
+    }
+
     :deep(.email_address) {
       color: #0058fe;
     }

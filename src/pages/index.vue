@@ -98,14 +98,14 @@ const review_list = computed(() => [
         </div>
       </div>
       <div class="bigImg">
-        <img src="/image/home/big_img.webp" alt="" fetchpriority="high" />
+        <img src="/image/home/big_img.webp" :alt="$t('index.party1.p0')" fetchpriority="high" />
       </div>
     </div>
     <div class="part2">
       <h2 class="h_two">{{ $t("index.party2.h2") }}</h2>
       <div class="img_article">
         <div class="img">
-          <img src="/image/home/home1.webp" loading="lazy" alt="" />
+          <img src="/image/home/home1.webp" loading="lazy" :alt="$t('index.party2.h3_1')" />
         </div>
         <div class="article">
           <div class="article_content">
@@ -122,7 +122,7 @@ const review_list = computed(() => [
       </div>
       <div class="article_img">
         <div class="img">
-          <img src="/image/home/home2.webp" loading="lazy" alt="" />
+          <img src="/image/home/home2.webp" loading="lazy" :alt="$t('index.party2.h3_2')" />
         </div>
         <div class="article">
           <div class="article_content">
@@ -141,7 +141,7 @@ const review_list = computed(() => [
       </div>
       <div class="img_article">
         <div class="img">
-          <img src="/image/home/home3.webp" loading="lazy" alt="" />
+          <img src="/image/home/home3.webp" loading="lazy" :alt="$t('index.party2.h3_3')" />
         </div>
         <div class="article">
           <div class="article_content">
@@ -158,7 +158,7 @@ const review_list = computed(() => [
       </div>
       <div class="article_img">
         <div class="img">
-          <img src="/image/home/home4.webp" loading="lazy" alt="" />
+          <img src="/image/home/home4.webp" loading="lazy" :alt="$t('index.party2.h3_4')" />
         </div>
         <div class="article">
           <div class="article_content">
@@ -254,7 +254,7 @@ const review_list = computed(() => [
     </div>
     <div class="part5">
       <div class="box">
-        <img class="boxBg" src="/image/home/bottom_background.webp" alt="" loading="lazy" />
+        <img class="boxBg" src="/image/home/bottom_background.webp" :alt="$t('index.party5.bgcAlt')" loading="lazy" />
         <h2>
           {{ $t("index.party5.h2") }}
         </h2>
@@ -429,7 +429,7 @@ const review_list = computed(() => [
             font-weight: bold;
             font-size: 32px;
             color: #171c1d;
-            line-height: 32px;
+            line-height: 40px;
             text-align: left;
           }
 
@@ -533,7 +533,6 @@ const review_list = computed(() => [
               flex: auto;
               margin-left: 16px;
               display: flex;
-              flex-wrap: wrap;
 
               .nickname {
                 flex: auto;
@@ -748,6 +747,11 @@ const review_list = computed(() => [
     .part2 {
       margin-top: 60px;
 
+      .h_two {
+        font-size: 40px;
+        line-height: 56px;
+      }
+
       .img_article,
       .article_img {
         margin-top: 40px;
@@ -762,8 +766,22 @@ const review_list = computed(() => [
       }
     }
 
+    .part3 {
+      .review_title {
+        font-size: 40px !important;
+        line-height: 56px !important;
+        margin-bottom: 40px !important;
+      }
+    }
+
     .part4 {
       margin-top: 60px;
+
+      h2 {
+        font-size: 40px;
+        line-height: 56px;
+        margin-bottom: 40px;
+      }
     }
 
     .part5 {
@@ -813,10 +831,18 @@ const review_list = computed(() => [
 
     .part3 {
       margin-top: 30px;
+
+      .review_title {
+        margin-bottom: 20px !important;
+      }
     }
 
     .part4 {
       margin-top: 30px;
+
+      h2 {
+        margin-bottom: 20px;
+      }
     }
 
     .part5 {
@@ -844,6 +870,23 @@ const review_list = computed(() => [
       .titleBox {
         font-size: 20px !important;
         padding: 12px 20px !important;
+      }
+    }
+  }
+
+  .part3 {
+    .review {
+      .review_list {
+        .top {
+          .right {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .star {
+              height: 16px;
+            }
+          }
+        }
       }
     }
   }

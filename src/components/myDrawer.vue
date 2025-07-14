@@ -23,7 +23,7 @@ const closeDrawer = () => {
         <div class="drawer-header">
           <slot name="title"></slot>
           <div class="close-btn" @click="closeDrawer">
-            <img src="../assets/mobile-close.svg" alt="" loading="lazy">
+            <img src="../assets/mobile-close.svg" alt="close" loading="lazy">
           </div>
         </div>
         <div class="drawer-body">

@@ -257,7 +257,7 @@ const reset = () => {
           <div class="t1">{{ textObject.t1 }}</div>
           <div class="t2">{{ textObject.t2 }}</div>
           <div class="loginGoogle" @click="googleLogin">
-            <img src="../assets/login/google.png" alt="" loading="lazy" />
+            <img src="../assets/login/google.png" :alt="$t('login.googleImgAlt')" loading="lazy" />
             <span style="margin-left: 16px">{{ textObject.t3 }}</span>
           </div>
           <div class="fengeline">
@@ -267,7 +267,7 @@ const reset = () => {
         <template v-else>
           <div class="LockImg">
             <div class="img">
-              <img src="../assets/login/lock.svg" alt="" loading="lazy" />
+              <img src="../assets/login/lock.svg" :alt="$t('login.lockImgAlt')" loading="lazy" />
             </div>
           </div>
           <div class="t1 tlc">{{ textObject.t1 }}</div>
@@ -298,14 +298,14 @@ const reset = () => {
               <img
                 v-if="state.pwdShow"
                 src="../assets/login/look.png"
-                alt=""
+                :alt="$t('login.eyeImgAlt')"
                 class="toggle_pwd"
                 @click="state.pwdShow = !state.pwdShow"
               />
               <img
                 v-else="state.pwdShow"
                 src="../assets/login/unlook.png"
-                alt=""
+                :alt="$t('login.eyeSlashImgAlt')"
                 class="toggle_pwd"
                 @click="state.pwdShow = !state.pwdShow"
               />
@@ -313,7 +313,7 @@ const reset = () => {
           </div>
           <div class="form_item" style="margin-top: 24px; margin-bottom: 16px">
             <div v-if="state.errShow" class="err_message_common">
-              <img src="../assets/login/errIcon.png" class="errIcon" alt="" />
+              <img src="../assets/login/errIcon.png" class="errIcon" :alt="$t('login.errorImgAlt')" />
               <span class="err_font">{{ state.errMessage }}</span>
             </div>
             <button type="submit" class="submit">
@@ -384,14 +384,14 @@ const reset = () => {
                 <img
                   v-if="state.pwdShow"
                   src="../assets/login/look.png"
-                  alt=""
+                  :alt="$t('login.eyeImgAlt')"
                   class="toggle_pwd"
                   @click="state.pwdShow = !state.pwdShow"
                 />
                 <img
                   v-else="state.pwdShow"
                   src="../assets/login/unlook.png"
-                  alt=""
+                  :alt="$t('login.eyeSlashImgAlt')"
                   class="toggle_pwd"
                   @click="state.pwdShow = !state.pwdShow"
                 />
@@ -400,7 +400,7 @@ const reset = () => {
           </div>
           <div class="form_item" style="margin-top: 24px; margin-bottom: 16px">
             <div v-if="state.errShow" class="err_message_common">
-              <img src="../assets/login/errIcon.png" class="errIcon" alt="" />
+              <img src="../assets/login/errIcon.png" class="errIcon" :alt="$t('login.errorImgAlt')" />
               <span class="err_font">{{ state.errMessage }}</span>
             </div>
             <button type="submit" class="submit" :disabled="state.loading">
@@ -461,14 +461,14 @@ const reset = () => {
                 <img
                   v-if="state.pwdShow"
                   src="../assets/login/look.png"
-                  alt=""
+                  :alt="$t('login.eyeImgAlt')"
                   class="toggle_pwd"
                   @click="state.pwdShow = !state.pwdShow"
                 />
                 <img
                   v-else="state.pwdShow"
                   src="../assets/login/unlook.png"
-                  alt=""
+                  :alt="$t('login.eyeSlashImgAlt')"
                   class="toggle_pwd"
                   @click="state.pwdShow = !state.pwdShow"
                 />
@@ -485,14 +485,14 @@ const reset = () => {
                 <img
                   v-if="state.pwdShow1"
                   src="../assets/login/look.png"
-                  alt=""
+                  :alt="$t('login.eyeImgAlt')"
                   class="toggle_pwd"
                   @click="state.pwdShow1 = !state.pwdShow1"
                 />
                 <img
                   v-else="state.pwdShow1"
                   src="../assets/login/unlook.png"
-                  alt=""
+                  :alt="$t('login.eyeSlashImgAlt')"
                   class="toggle_pwd"
                   @click="state.pwdShow1 = !state.pwdShow1"
                 />
@@ -501,7 +501,7 @@ const reset = () => {
           </template>
           <div class="form_item" style="margin-top: 24px; margin-bottom: 16px">
             <div v-if="state.errShow" class="err_message_common">
-              <img src="../assets/login/errIcon.png" class="errIcon" alt="" />
+              <img src="../assets/login/errIcon.png" class="errIcon" :alt="$t('login.errorImgAlt')" />
               <span class="err_font">{{ state.errMessage }}</span>
             </div>
             <button type="submit" class="submit" :disabled="state.loading">
@@ -523,7 +523,7 @@ const reset = () => {
         </form>
       </div>
       <div class="close_btn" @click="setLoginVisible(false)">
-        <img src="../assets/mobile-close.svg" alt="" />
+        <img src="../assets/mobile-close.svg" :alt="$t('login.closeImgAlt')" />
       </div>
     </div>
   </Dialog>
@@ -835,7 +835,7 @@ const reset = () => {
 
   .close_btn {
     position: absolute;
-    top: 12px;
+    top: 24px;
     right: 24px;
     cursor: pointer;
     width: 18px;
