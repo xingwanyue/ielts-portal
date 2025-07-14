@@ -49,7 +49,7 @@ const alternates = Object.keys(locales).map((hreflang: string) => ({
   rel: "alternate",
   hreflang: hreflang,
   href: () =>
-    `http://${requestUrl.host}${
+    `https://${requestUrl.host}${
       hreflang === "en" ? "" : `/${hreflang}`
     }${currentPathWithoutLocale}`,
 }));
