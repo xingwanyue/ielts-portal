@@ -37,14 +37,8 @@ const localePath = useLocalePath();
     padding: 30px;
   }
 
-  @media screen and (max-width: 460px) {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-    .right {
-      align-items: flex-start !important;
-    }
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
   }
 
   .left {
@@ -64,11 +58,11 @@ const localePath = useLocalePath();
     color: #171C1D;
     line-height: 56px;
     text-align: left;
+    flex-wrap: wrap;
 
     @media screen and (max-width: 768px) {
-      gap: 10px;
-      line-height: 22px;
-      flex-direction: column;
+      gap: 20px;
+      line-height: 16px;
     }
   }
 

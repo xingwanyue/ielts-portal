@@ -14,27 +14,27 @@ useSeoMeta({
     <div class="content">
       <div>{{ $t('refundPolicy.p0') }}</div>
       <div>
-        <div>{{ $t('refundPolicy.p1.text1') }}</div>
+        <div class="fontWeight">{{ $t('refundPolicy.p1.text1') }}</div>
         <div>{{ $t('refundPolicy.p1.text2') }}</div>
         <div>{{ $t('refundPolicy.p1.text3') }}</div>
         <div>{{ $t('refundPolicy.p1.text4') }}</div>
-        <div>{{ $t('refundPolicy.p1.text5') }}</div>
+      </div>
+      <div>
+        <div class="fontWeight">{{ $t('refundPolicy.p1.text5') }}</div>
         <div>{{ $t('refundPolicy.p1.text6') }}</div>
+        <div>{{ $t('refundPolicy.p2.text1') }}</div>
+        <div>{{ $t('refundPolicy.p3.text1') }}</div>
+        <div v-html="$t('refundPolicy.p4.text1')"></div>
+        <div>{{ $t('refundPolicy.p5.text1') }}</div>
       </div>
-      <div>{{ $t('refundPolicy.p2.text1') }}</div>
-      <div>{{ $t('refundPolicy.p3.text1') }}</div>
-      <div v-html="$t('refundPolicy.p4.text1')"></div>
-      <div>{{ $t('refundPolicy.p5.text1') }}</div>
       <div>
-        <div>{{ $t('refundPolicy.p6.text1') }}</div>
+        <div class="fontWeight">{{ $t('refundPolicy.p6.text1') }}</div>
         <div>{{ $t('refundPolicy.p6.text2') }}</div>
-      </div>
-      <div>
         <div>{{ $t('refundPolicy.p7.text1') }}</div>
         <div>{{ $t('refundPolicy.p7.text2') }}</div>
       </div>
       <div>
-        <div>{{ $t('refundPolicy.p8.text1') }}</div>
+        <div class="fontWeight">{{ $t('refundPolicy.p8.text1') }}</div>
         <div>{{ $t('refundPolicy.p8.text2') }}</div>
       </div>
       <div>
@@ -84,6 +84,9 @@ useSeoMeta({
     flex-direction: column;
     :deep(.email_address) {
       color: #0058fe;
+    }
+    .fontWeight {
+      font-weight: bold;
     }
   }
 }

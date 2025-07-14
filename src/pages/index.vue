@@ -429,7 +429,7 @@ const review_list = computed(() => [
             font-weight: bold;
             font-size: 32px;
             color: #171c1d;
-            line-height: 32px;
+            line-height: 40px;
             text-align: left;
           }
 
@@ -829,6 +829,10 @@ const review_list = computed(() => [
 
     .part3 {
       margin-top: 30px;
+
+      .review_title {
+        margin-bottom: 40px !important;
+      }
     }
 
     .part4 {
