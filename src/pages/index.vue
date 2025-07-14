@@ -770,6 +770,7 @@ const review_list = computed(() => [
       .review_title {
         font-size: 40px !important;
         line-height: 56px !important;
+        margin-bottom: 40px !important;
       }
     }
 
@@ -779,6 +780,7 @@ const review_list = computed(() => [
       h2 {
         font-size: 40px;
         line-height: 56px;
+        margin-bottom: 40px;
       }
     }
 
@@ -831,12 +833,16 @@ const review_list = computed(() => [
       margin-top: 30px;
 
       .review_title {
-        margin-bottom: 40px !important;
+        margin-bottom: 20px !important;
       }
     }
 
     .part4 {
       margin-top: 30px;
+
+      h2 {
+        margin-bottom: 20px;
+      }
     }
 
     .part5 {
