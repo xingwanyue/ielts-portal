@@ -4,32 +4,20 @@ import { login } from "@/utils/api";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 useSeoMeta({
-  title: t('index.SeoMeta.title'),
-  description: t('index.SeoMeta.description'),
+  title: t("index.SeoMeta.title"),
+  description: t("index.SeoMeta.description"),
 });
 
 const googleLogin = async () => {
   const res: any = await googlePopupLogin();
   const arg = {
     google: true,
-  }
+  };
   const res2 = await login({ ...arg, ...res });
   if (res2?.errCode === 0) {
     saveToken(res2.data.token);
   }
 };
-
-useHead({
-  // 预加载首屏图片
-  link: [
-    {
-      rel: "preload",
-      as: "image",
-      href: "/image/home/big_img.webp",
-      type: "image/webp",
-    },
-  ],
-});
 
 const state = reactive({
   flagList: [true, true, true, true],
@@ -76,7 +64,6 @@ const review_list = computed(() => [
       "“Thanks to their targeted practice modules, I improved my writing score faster than I ever thought possible. The convenience of studying in short bursts truly sold me.”",
   },
 ]);
-
 </script>
 
 <template>
@@ -98,14 +85,23 @@ const review_list = computed(() => [
         </div>
       </div>
       <div class="bigImg">
-        <img src="/image/home/big_img.webp" :alt="$t('index.party1.p0')" fetchpriority="high" />
+        <NuxtImg
+          src="/image/home/big_img.webp"
+          :alt="$t('index.party1.p0')"
+          fetchpriority="high"
+          preload
+        />
       </div>
     </div>
     <div class="part2">
       <h2 class="h_two">{{ $t("index.party2.h2") }}</h2>
       <div class="img_article">
         <div class="img">
-          <img src="/image/home/home1.webp" loading="lazy" :alt="$t('index.party2.h3_1')" />
+          <img
+            src="/image/home/home1.webp"
+            loading="lazy"
+            :alt="$t('index.party2.h3_1')"
+          />
         </div>
         <div class="article">
           <div class="article_content">
@@ -114,7 +110,10 @@ const review_list = computed(() => [
             <div class="btn">
               <div class="font">{{ $t("index.party2.btn") }}</div>
               <div class="icon">
-                <img src="../assets/home/arrow_right.svg" :alt="$t('index.party2.btn_img_alt')">
+                <img
+                  src="../assets/home/arrow_right.svg"
+                  :alt="$t('index.party2.btn_img_alt')"
+                />
               </div>
             </div>
           </div>
@@ -122,7 +121,11 @@ const review_list = computed(() => [
       </div>
       <div class="article_img">
         <div class="img">
-          <img src="/image/home/home2.webp" loading="lazy" :alt="$t('index.party2.h3_2')" />
+          <img
+            src="/image/home/home2.webp"
+            loading="lazy"
+            :alt="$t('index.party2.h3_2')"
+          />
         </div>
         <div class="article">
           <div class="article_content">
@@ -133,7 +136,10 @@ const review_list = computed(() => [
             <div class="btn">
               <div class="font">{{ $t("index.party2.btn") }}</div>
               <div class="icon">
-                <img src="../assets/home/arrow_right.svg" :alt="$t('index.party2.btn_img_alt')" />
+                <img
+                  src="../assets/home/arrow_right.svg"
+                  :alt="$t('index.party2.btn_img_alt')"
+                />
               </div>
             </div>
           </div>
@@ -141,7 +147,11 @@ const review_list = computed(() => [
       </div>
       <div class="img_article">
         <div class="img">
-          <img src="/image/home/home3.webp" loading="lazy" :alt="$t('index.party2.h3_3')" />
+          <img
+            src="/image/home/home3.webp"
+            loading="lazy"
+            :alt="$t('index.party2.h3_3')"
+          />
         </div>
         <div class="article">
           <div class="article_content">
@@ -150,7 +160,10 @@ const review_list = computed(() => [
             <div class="btn">
               <div class="font">{{ $t("index.party2.btn") }}</div>
               <div class="icon">
-                <img src="../assets/home/arrow_right.svg" :alt="$t('index.party2.btn_img_alt')">
+                <img
+                  src="../assets/home/arrow_right.svg"
+                  :alt="$t('index.party2.btn_img_alt')"
+                />
               </div>
             </div>
           </div>
@@ -158,7 +171,11 @@ const review_list = computed(() => [
       </div>
       <div class="article_img">
         <div class="img">
-          <img src="/image/home/home4.webp" loading="lazy" :alt="$t('index.party2.h3_4')" />
+          <img
+            src="/image/home/home4.webp"
+            loading="lazy"
+            :alt="$t('index.party2.h3_4')"
+          />
         </div>
         <div class="article">
           <div class="article_content">
@@ -169,7 +186,10 @@ const review_list = computed(() => [
             <div class="btn">
               <div class="font">{{ $t("index.party2.btn") }}</div>
               <div class="icon">
-                <img src="../assets/home/arrow_right.svg" :alt="$t('index.party2.btn_img_alt')" />
+                <img
+                  src="../assets/home/arrow_right.svg"
+                  :alt="$t('index.party2.btn_img_alt')"
+                />
               </div>
             </div>
           </div>
@@ -200,61 +220,80 @@ const review_list = computed(() => [
       </div>
     </div>
     <div class="part4">
-      <h2>{{ $t('index.party4.h2') }}</h2>
+      <h2>{{ $t("index.party4.h2") }}</h2>
       <div class="ask_and_answer">
         <div class="ask">
-          <div>{{ $t('index.party4.question1') }}</div>
+          <div>{{ $t("index.party4.question1") }}</div>
           <div class="switch btn" @click="switchChange(0)">
-            <img v-if="state.flagList[0]" src="../assets/home/open.svg" alt="open" />
+            <img
+              v-if="state.flagList[0]"
+              src="../assets/home/open.svg"
+              alt="open"
+            />
             <img v-else src="../assets/home/close.svg" alt="close" />
           </div>
         </div>
         <div v-show="!state.flagList[0]" class="answer">
-          {{ $t('index.party4.answer1') }}
+          {{ $t("index.party4.answer1") }}
         </div>
       </div>
       <div class="ask_and_answer mt24">
         <div class="ask">
-          <div>{{ $t('index.party4.question2') }}</div>
+          <div>{{ $t("index.party4.question2") }}</div>
           <div class="switch btn" @click="switchChange(1)">
-            <img v-if="state.flagList[1]" src="../assets/home/open.svg" alt="open" />
+            <img
+              v-if="state.flagList[1]"
+              src="../assets/home/open.svg"
+              alt="open"
+            />
             <img v-else src="../assets/home/close.svg" alt="close" />
           </div>
         </div>
         <div v-show="!state.flagList[1]" class="answer">
-          {{ $t('index.party4.answer2') }}
+          {{ $t("index.party4.answer2") }}
         </div>
-
       </div>
       <div class="ask_and_answer mt24">
         <div class="ask">
-          <div>{{ $t('index.party4.question3') }}</div>
+          <div>{{ $t("index.party4.question3") }}</div>
           <div class="switch btn" @click="switchChange(2)">
-            <img v-if="state.flagList[2]" src="../assets/home/open.svg" alt="open" />
+            <img
+              v-if="state.flagList[2]"
+              src="../assets/home/open.svg"
+              alt="open"
+            />
             <img v-else src="../assets/home/close.svg" alt="close" />
           </div>
         </div>
         <div v-show="!state.flagList[2]" class="answer">
-          {{ $t('index.party4.answer3') }}
+          {{ $t("index.party4.answer3") }}
         </div>
-
       </div>
       <div class="ask_and_answer mt24">
         <div class="ask">
-          <div>{{ $t('index.party4.question4') }}</div>
+          <div>{{ $t("index.party4.question4") }}</div>
           <div class="switch btn" @click="switchChange(3)">
-            <img v-if="state.flagList[3]" src="../assets/home/open.svg" alt="open" />
+            <img
+              v-if="state.flagList[3]"
+              src="../assets/home/open.svg"
+              alt="open"
+            />
             <img v-else src="../assets/home/close.svg" alt="close" />
           </div>
         </div>
         <div v-show="!state.flagList[3]" class="answer">
-          {{ $t('index.party4.answer4') }}
+          {{ $t("index.party4.answer4") }}
         </div>
       </div>
     </div>
     <div class="part5">
       <div class="box">
-        <img class="boxBg" src="/image/home/bottom_background.webp" :alt="$t('index.party5.bgcAlt')" loading="lazy" />
+        <img
+          class="boxBg"
+          src="/image/home/bottom_background.webp"
+          :alt="$t('index.party5.bgcAlt')"
+          loading="lazy"
+        />
         <h2>
           {{ $t("index.party5.h2") }}
         </h2>
@@ -723,7 +762,6 @@ const review_list = computed(() => [
 
 @media screen and (max-width: 1300px) {
   .home {
-
     .part2,
     .part3,
     .part4,

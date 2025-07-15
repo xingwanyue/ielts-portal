@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/main.scss"],
-  modules: ["@nuxtjs/i18n"],
+  modules: ["@nuxtjs/i18n", "@nuxt/image"],
   i18n: {
     locales: ["en"].map((locale) => ({
       code: locale,
@@ -36,6 +36,12 @@ export default defineNuxtConfig({
       strictMessage: false,
     },
     detectBrowserLanguage: false,
+  },
+  image: {
+    provider: "cloudflare",
+    cloudflare: {
+      baseURL: "https://ieltspractice.ai",
+    },
   },
   // vite: {
   //   build: {
