@@ -37,26 +37,28 @@ export default defineNuxtConfig({
     },
     detectBrowserLanguage: false,
   },
-  // vite: {
-  //   build: {
-  //     rollupOptions: {
-  //       preserveEntrySignatures: "strict",
-  //       output: {
-  //         chunkFileNames: "_nuxt/[hash].js",
-  //         entryFileNames: "_nuxt/[hash].js",
-  //         manualChunks(id: string) {
-  //           if (id.includes("nuxt")) {
-  //             return "nuxt";
-  //           }
-  //           if (id.includes("vue")) {
-  //             return "vue";
-  //           }
-  //           return "vendor";
-  //         },
-  //       },
-  //     },
-  //   },
-  // },
+  vite: {
+    build: {
+      rollupOptions: {
+        preserveEntrySignatures: "strict",
+        output: {
+          chunkFileNames: "_nuxt/[hash].js",
+          entryFileNames: "_nuxt/[hash].js",
+          manualChunks(id: string) {
+            if (id.includes('node_modules')) {
+              if (id.includes('nuxt')) {
+                return 'nuxt';
+              }
+              if (id.includes('vue')) {
+                return 'vue';
+              }
+              return 'vendor';
+            }
+          },
+        },
+      },
+    },
+  },
   app: {
     head: {
       link: [
